@@ -26,15 +26,17 @@
 
     function sairConta() {
       localStorage.removeItem('usuario');
-      window.location.href = '/login.html';
+      window.location.href = 'https://cenufes.com.br/login.html';
+      // window.location.href = '/login.html';
     }
 
     document.addEventListener('DOMContentLoaded', function () {
       const atendimentosLink = document.getElementById('atendimentosLink');
 
       if (usuario === null) {
-        window.location.href = 'login.html';
-      } 
+        // window.location.href = 'https://cenufes.com.br/login.html';
+        window.location.href = '/login.html';
+      }
       
       else {
         const nome = usuario ? usuario.nome : null;

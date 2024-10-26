@@ -62,7 +62,7 @@ export default {
     };
   },
   mounted() {
-    this.paciente.projeto = "Alunos e Funcionários";
+    this.paciente.projeto = "Cardiovascular";
     this.paciente.status = "Na fila";
   },
   methods: {

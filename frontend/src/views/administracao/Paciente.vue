@@ -305,7 +305,7 @@ export default {
       formData.append('file', arquivo);
       formData.append('cod', this.paciente.cod);
 
-      fetch(`${server_backend_url}/salvarArquivo`, {
+      fetch(`https://cenufes.com.br:21079/salvarArquivo`, {
         method: 'POST',
         body: formData
       })

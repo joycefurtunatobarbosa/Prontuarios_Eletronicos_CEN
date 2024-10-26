@@ -27,6 +27,7 @@ module.exports = function (app, mongo) {
             const database = mongo.db('cen');
             const colecao = database.collection('pacientes');
 
+            console.log("Chegou no salvarArquivo");
             console.log(req.body);
 
             const codPaciente = req.body.cod;

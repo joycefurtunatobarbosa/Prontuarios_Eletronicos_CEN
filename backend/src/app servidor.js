@@ -7,7 +7,7 @@ const fs = require('fs');
 const https = require('https');
 
 // Defina a porta para HTTPS
-const porta = 21058;
+const porta = 3000;
 
 // Carregar chave privada e certificados SSL
 const options = {
@@ -18,7 +18,8 @@ const options = {
 };
 
 // String de conexão do MongoDB
-const conexao = 'mongodb+srv://gabrielnama:ugcYK4KayTIoRNl9@cen.vswafpl.mongodb.net/?retryWrites=true&w=majority';
+// const conexao = 'mongodb+srv://gabrielnama:ugcYK4KayTIoRNl9@cen.vswafpl.mongodb.net/?retryWrites=true&w=majority';
+const conexao = 'mongodb://localhost:27017';
 const mongo = new MongoClient(conexao);
 
 const app = express();

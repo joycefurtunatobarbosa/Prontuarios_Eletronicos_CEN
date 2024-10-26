@@ -36,7 +36,8 @@
           <td v-if="paciente.nutricionista">{{ paciente.nutricionista.nome }}</td>
 
           <td>
-            <a :href="`${server_frontend_url}/paciente/${paciente.cod}`" class="btn btn-success" target="_blank">Ver</a>
+            <!-- <a :href="`#`" class="btn btn-success" target="">Ver</a> -->
+            <a :href="`${server_frontend_url}/paciente/${paciente.cod}`" class="btn btn-success" target="">Ver</a>
           </td>
         </tr>
 
